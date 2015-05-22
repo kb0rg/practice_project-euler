@@ -1,11 +1,11 @@
 """
 The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
+
+# look up sieve of Eratosthenes?
 """
 import math
 
-
-# look up sieve of Eratosthenes?
 # create utility function to use later
 def is_prime(n):
 	if n == 2 or n == 3:
@@ -37,13 +37,3 @@ def largestPrimeFactor(n):
 	return sorted(prime_factor_list)[-1]
 
 print largestPrimeFactor(600851475143)
-
-
-"""
-or. create an isprime function first.
-start a for loop, running the range backwards, beginning from n % 2 
-??? not sure if logic is correct, but 2 is the first potentional prime it's divisible by, so half n is the largest possible factor???
-check to see if loop iterator is prime -- if not, skip.
-if iterator is prime, then check whether dividing n by x is an integer. then check to see if n%x is prime?
-"""
-
