@@ -2,7 +2,6 @@
 The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
 
-# look up sieve of Eratosthenes?
 """
 import math
 
@@ -37,3 +36,8 @@ def largestPrimeFactor(n):
 	return sorted(prime_factor_list)[-1]
 
 print largestPrimeFactor(600851475143)
+
+"""
+to revisit later:
+look up sieve of Eratosthenes?
+""
